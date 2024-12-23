@@ -1,0 +1,1 @@
+const initPageAnimation=()=>{document.querySelectorAll("[data-animate]").forEach(item=>{let observer;new IntersectionObserver(el=>{!0!==el[0].isIntersecting||el[0].target.classList.contains("is-animated")||el[0].target.classList.add("is-animated")},{root:null,threshold:[.2]}).observe(item)})};
